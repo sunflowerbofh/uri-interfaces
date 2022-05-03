@@ -8,7 +8,7 @@
         "rfc3987"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/thephpleague/uri-interfaces",
+    "homepage": "http://github.com/thephpleague/uri-interfaces",
     "authors": [
         {
             "name" : "Ignace Nyamagana Butera",
@@ -63,6 +63,6 @@
     },
     "suggest": {
         "ext-intl": "to use the IDNA feature",
-        "symfony/polyfill-intl-idn": "to use the IDNA feature via Symfony Polyfill"
+        "symfony/intl": "to use the IDNA feature via Symfony Polyfill"
     }
 }
