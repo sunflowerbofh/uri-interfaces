@@ -1,0 +1,5 @@
+thephpleague-uri-interfaces (2.3.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1012443).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Tue, 03 May 2022 10:05:39 +0200

@@ -1,0 +1,35 @@
+Source: thephpleague-uri-interfaces
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Standards-Version: 4.6.1
+Homepage: https://github.com/thephpleague/uri-interfaces
+Vcs-Browser: https://github.com/thephpleague/uri-interfaces
+Vcs-Git: https://github.com/thephpleague/uri-interfaces.git
+Rules-Requires-Root: no
+
+Package: php-league-uri-interfaces
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: Contains interface to represents URI objects according to RFC 3986
+ The UriInterface interface models generic URIs as specified in RFC 3986.
+ The interface provides methods for interacting with the various URI parts,
+ which will obviate the need for repeated parsing of the URI. It also specifies:
+  * a __toString() method for casting the modeled URI to its string
+    representation.
+  * a jsonSerialize() method to improve interoperability with WHATWG URL Living
+    standard

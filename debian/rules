@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh ${@} --with phpcomposer
+
+override_dh_auto_build:
+	phpab --tolerant --output src/autoload.php src
+	sed -i 's|league\\\\uri\\\\|league\\\\uri\\\\interfaces\\\\|g' src/autoload.php
+
+execute_after_dh_install:
+	phpab --tolerant --output src/autoload.php src
